@@ -1,6 +1,6 @@
 # LaslesVPN
 
-##Features
+## Features
 - Parcel
 - SCSS
 - Mixins
