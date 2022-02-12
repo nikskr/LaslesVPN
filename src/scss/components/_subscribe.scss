@@ -1,0 +1,31 @@
+.subscribe{
+    @include flexible;
+    max-width: 1140px;
+    width: 100%;
+    padding: 60px 70px;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 50%;
+    border-radius: $rounded;
+    box-shadow: 6px 6px 6px 6px rgba(0,0,0, 0.1);
+
+    &__header{
+        max-width: 370px;
+        margin-bottom: 20px;
+        @include font($xxl, 45px, $dark, 500)
+    }
+    &__info{
+        flex-grow: 1;
+        @include font($m, $line-height, $grey )
+    }
+
+    &__link{
+        margin: 0;
+    }
+
+}
+
+.subscribe:hover{
+    border: 2px solid $light-grey;
+}

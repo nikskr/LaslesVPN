@@ -1,0 +1,66 @@
+.cards{
+    @include flexible(space-between, stretch);
+    text-align: center;
+    border-color: #DDDDDD;
+    height: 760px;
+}
+
+.pricing{
+    
+    padding-bottom: 150px;
+
+    &__card{
+        @include flexible(stretch, center, column);
+        padding: 80px 70px 50px;
+        border: 2px solid $light-grey;
+        border-radius: $rounded;
+    }
+
+    &__img{
+        margin-bottom: 30px;
+        width: 145px;
+        height: 165px;
+    }
+
+    &__card-name{
+        margin-bottom: 30px;
+        @include font($m, $line-height, $dark, 500);
+    }
+
+    &__list{
+        flex-grow: 1;
+    }
+    &__list-item{
+        text-align: left;
+        background: url('/assets/plans/marker.png') no-repeat left center;
+        padding-left: 45px;
+        margin-bottom: 10px;
+        @include font($xs, $line-height, $grey);
+ 
+    }
+
+    &__price{
+        margin-bottom: 20px;
+        @include font($xl, $line-height, $dark, 500);
+    }
+
+    &__time{
+        @include font($xl, $line-height, $grey);
+    }
+    &__select{
+        padding: 10px 60px;
+        border: 2px solid $error;
+        border-radius: 50px;
+        @include font($sm, $line-height, $error, bold);
+    }
+
+    &__select:hover{
+        background-color: $error;
+        color: $white;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    &__card:hover{
+        border: 4px solid $error;
+    }
+}

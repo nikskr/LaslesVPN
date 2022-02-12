@@ -1,0 +1,44 @@
+.footer{
+    @include flexible;
+    padding: 200px 0px;
+    &__contacts{
+        width: 50%;
+    }
+
+    &__logo{
+        margin-bottom: 20px;
+    }
+    &__info{
+        max-width: 340px;
+        width: 100%;
+        margin-bottom: 30px;
+        @include font($sm, $line-height, $grey)
+    }
+
+    &__link-image{
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    &__copyright{
+        @include font($sm, $line-height, $light-grey)
+    }
+
+    &__help{
+        @include flexible(space-between, flex-start);
+        width: 50%;
+    }
+
+    &__container-header{
+        margin-bottom: 20px;
+        @include font($m, $line-height, $dark, 500)
+    }
+
+    &__list-item{
+        margin-bottom: 10px;
+        @include font($sm, $line-height, $grey)
+    }
+
+    &__info-bold{
+        @include font($sm, $line-height, $grey, 500)
+    }
+}

@@ -1,0 +1,29 @@
+.features {
+
+    background: url('/assets/features/features-illustration.png') no-repeat left center;
+
+    @include flexible(center, flex-start, column);
+    padding: 150px 0px;
+
+    &__content{
+        max-width: 400px;
+        padding: 0 10px;
+        transform: translateX(200%);
+    }
+    &__header{
+        margin-bottom: 20px;
+        @include font($xxl, 50px, $dark, 500)
+    }
+
+    &__text{
+        margin-bottom: 20px;
+        @include font($sm, $line-height, $grey);
+    }
+
+    &__item{
+        background: url('/assets/features/features-marker.png') no-repeat left center;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        @include font($xs, $line-height, $grey);
+    }
+}

@@ -1,0 +1,15 @@
+.heading{
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__title{
+        margin-bottom: 20px;
+        @include font($xxl, 50px, $dark, 500)
+    }
+
+    &__subtitle{
+        @include font($sm, $line-height, $dark)
+    }
+}
