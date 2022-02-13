@@ -98,7 +98,7 @@ a {
 }
 
 .about {
-  background: url("/about-illustration.12edb129.png") no-repeat right center;
+  background: url("about-illustration.12edb129.png") no-repeat right center;
   padding: 120px 0 180px;
   display: flex;
   justify-content: space-between;
@@ -183,7 +183,7 @@ a {
 }
 
 .features {
-  background: url("/features-illustration.7a1dde88.png") no-repeat left center;
+  background: url("features-illustration.7a1dde88.png") no-repeat left center;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -212,7 +212,7 @@ a {
   font-family: "Rubik" sans-serif;
 }
 .features__item {
-  background: url("/features-marker.d00ae7df.png") no-repeat left center;
+  background: url("features-marker.d00ae7df.png") no-repeat left center;
   padding-left: 30px;
   margin-bottom: 15px;
   font-size: 14px;
@@ -262,7 +262,7 @@ a {
 }
 .pricing__list-item {
   text-align: left;
-  background: url("/marker.e10f9e5e.png") no-repeat left center;
+  background: url("marker.e10f9e5e.png") no-repeat left center;
   padding-left: 45px;
   margin-bottom: 10px;
   font-size: 14px;
