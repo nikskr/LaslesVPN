@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  padding: 50px 120px 100px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heading {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading__title {
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.heading__subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.header__nav-item {
+  margin: 0 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.header__sign-in {
+  margin-right: 25px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.header__sign-up {
+  padding: 15px 50px;
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #F53855;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.header__sign-up:hover {
+  background-color: #F53855;
+  color: #FFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.header__sign-in:hover {
+  color: #F53855;
+}
+
+.about {
+  background: url("/about-illustration.12edb129.png") no-repeat right center;
+  padding: 120px 0 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.about__header {
+  max-width: 555px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.about__text {
+  max-width: 555px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.about__link {
+  background-color: #F53855;
+  padding: 20px 80px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFF;
+  font-weight: bold;
+  font-family: "Rubik" sans-serif;
+}
+.about__link:hover {
+  background-color: #FFF;
+  color: #F53855;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 65px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.statistics__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 360px;
+  width: 100%;
+}
+.statistics__icon {
+  width: 55px;
+  height: 55px;
+  margin-right: 35px;
+}
+.statistics__number {
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: bold;
+  font-family: "Rubik" sans-serif;
+  margin-bottom: 5px;
+}
+.statistics__name {
+  font-size: 20px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.statistics__card-center {
+  border: 2px solid #EEEFF2;
+  border-top: none;
+  border-bottom: none;
+}
+
+.features {
+  background: url("/features-illustration.7a1dde88.png") no-repeat left center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 150px 0px;
+}
+.features__content {
+  max-width: 400px;
+  padding: 0 10px;
+  transform: translateX(200%);
+}
+.features__header {
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.features__text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.features__item {
+  background: url("/features-marker.d00ae7df.png") no-repeat left center;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  text-align: center;
+  border-color: #DDDDDD;
+  height: 760px;
+}
+
+.pricing {
+  padding-bottom: 150px;
+}
+.pricing__card {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 70px 50px;
+  border: 2px solid #AFB5C0;
+  border-radius: 10px;
+}
+.pricing__img {
+  margin-bottom: 30px;
+  width: 145px;
+  height: 165px;
+}
+.pricing__card-name {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.pricing__list {
+  flex-grow: 1;
+}
+.pricing__list-item {
+  text-align: left;
+  background: url("/marker.e10f9e5e.png") no-repeat left center;
+  padding-left: 45px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.pricing__price {
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.pricing__time {
+  font-size: 25px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.pricing__select {
+  padding: 10px 60px;
+  border: 2px solid #F53855;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #F53855;
+  font-weight: bold;
+  font-family: "Rubik" sans-serif;
+}
+.pricing__select:hover {
+  background-color: #F53855;
+  color: #FFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.pricing__card:hover {
+  border: 4px solid #F53855;
+}
+
+.network {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.network__text {
+  margin-bottom: 150px;
+}
+.network__huge-global {
+  margin-bottom: 35px;
+}
+
+.testimonials {
+  padding-bottom: 200px;
+}
+.testimonials__text {
+  margin-bottom: 100px;
+}
+.testimonials__cards {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 80px;
+  overflow-x: hidden;
+}
+.testimonials__card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 400px;
+  height: 230px;
+  padding: 30px;
+  margin-right: 50px;
+  overflow: hidden;
+  border: 2px solid #AFB5C0;
+  border-radius: 10px;
+}
+.testimonials__card-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 400px;
+  width: 100%;
+}
+.testimonials__author-img-container {
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+.testimonials__author-info-container {
+  flex-grow: 1;
+}
+.testimonials__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.testimonials__author-location {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.testimonials__mark-number {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.testimonials__comment {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.testimonials__switchers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.testimonials__slider {
+  flex-grow: 1;
+}
+.testimonials__arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.testimonials__arrow--left {
+  padding: 15px;
+  margin-right: 20px;
+}
+.testimonials__arrow--right {
+  padding: 15px;
+  background-color: #F53855;
+  border-radius: 30px;
+}
+.testimonials__btn {
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  margin-right: 15px;
+}
+.testimonials__card:hover {
+  border: 4px solid #F53855;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 1140px;
+  width: 100%;
+  padding: 60px 70px;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: 50%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.subscribe__header {
+  max-width: 370px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 45px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.subscribe__info {
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.subscribe__link {
+  margin: 0;
+}
+
+.subscribe:hover {
+  border: 2px solid #AFB5C0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 200px 0px;
+}
+.footer__contacts {
+  width: 50%;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__info {
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.footer__link-image {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 30px;
+  color: #AFB5C0;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.footer__help {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 50%;
+}
+.footer__container-header {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+.footer__list-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 400;
+  font-family: "Rubik" sans-serif;
+}
+.footer__info-bold {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  font-weight: 500;
+  font-family: "Rubik" sans-serif;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
